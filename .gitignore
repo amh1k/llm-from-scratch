@@ -1,0 +1,5 @@
+gpt2/
+model_and_optimizer.pth
+__pycache__/
+*.zip
+*.pth
