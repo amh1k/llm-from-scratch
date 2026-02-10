@@ -1,6 +1,9 @@
 import torch
 import torch.nn as nn
 
+
+
+
 def generate_text(model, idx, max_tokens, context_size):
     for  _ in range(max_tokens):
         idx_cond = idx[:, -context_size:]
@@ -19,3 +22,13 @@ def generate_text(model, idx, max_tokens, context_size):
         idx = torch.cat((idx, idx_next), dim=1)
         
     return idx
+
+
+def text_to_token(text, tokenizer):
+    encoded = tokenizer.encode(text, allowed_special= {'<|endoftext|>'})
+    encoded_tensor = torch.tensor(encoded).unsqueeze(0)
+    return encoded_tensor
+
+def token_to_text(token_ids, tokenizer):
+    flat = token_ids.flatten()
+    return tokenizer.decode(flat.tolist())
