@@ -51,12 +51,12 @@ Modern LLM training requires more than just a simple SGD. This repo demonstrates
 
 The project is structured as a progressive curriculum:
 
-1.  **[1-text-processing.ipynb](file:///home/amh1k/ml and python/llm-from-scratch/1-text-processing.ipynb)**: From raw strings to tokens. Implements simple tokenization, Byte Pair Encoding (BPE), and the `GPTDataset` for sliding-window data loading.
-2.  **[2-coding-attention.ipynb](file:///home/amh1k/ml and python/llm-from-scratch/2-coding-attention.ipynb)**: Step-by-step assembly of the Self-Attention mechanism, Causal Masking, and Multi-Head scaling.
-3.  **[3-llm-architecture.ipynb](file:///home/amh1k/ml and python/llm-from-scratch/3-llm-architecture.ipynb)**: Building the `GPTModel`. Implements LayerNorm, GELU activation, and the residual connections that make deep transformers possible.
-4.  **[4-pretraining.ipynb](file:///home/amh1k/ml and python/llm-from-scratch/4-pretraining.ipynb)**: Calculating loss, evaluating models, and the first pretraining loop on "The Verdict" (short story).
-5.  **[5-finetuning.ipynb](file:///home/amh1k/ml and python/llm-from-scratch/5-finetuning.ipynb)**: Adapting the pretrained model for Spam Classification. Demonstrates the power of transfer learning.
-6.  **[6-instruction-finetuning.ipynb](file:///home/amh1k/ml and python/llm-from-scratch/6-instruction-finetuning.ipynb)**: The final frontier. Teaching the model to follow user commands using the Alpaca dataset format.
+1.  **[1-text-processing.ipynb]**: From raw strings to tokens. Implements simple tokenization, Byte Pair Encoding (BPE), and the `GPTDataset` for sliding-window data loading.
+2.  **[2-coding-attention.ipynb]**: Step-by-step assembly of the Self-Attention mechanism, Causal Masking, and Multi-Head scaling.
+3.  **[3-llm-architecture.ipynb]**: Building the `GPTModel`. Implements LayerNorm, GELU activation, and the residual connections that make deep transformers possible.
+4.  **[4-pretraining.ipynb]**: Calculating loss, evaluating models, and the first pretraining loop on "The Verdict" (short story).
+5.  **[5-finetuning.ipynb]**: Adapting the pretrained model for Spam Classification. Demonstrates the power of transfer learning.
+6.  **[6-instruction-finetuning.ipynb]**: The final frontier. Teaching the model to follow user commands using the Alpaca dataset format.
 
 ---
 
